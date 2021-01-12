@@ -4,3 +4,36 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: sans-serif;
+}
+
+.intro {
+  height: 100vh;
+}
+
+.intro video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.intro .intro__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.788);
+}
+
+.fitness {
+  height: 100vh;
+}
+
+.fitness h1 {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 80px;
+}
