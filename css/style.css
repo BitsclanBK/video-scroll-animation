@@ -1,4 +1,4 @@
-/* Default styling */
+/* Default styling starts */
 * {
   padding: 0;
   margin: 0;
@@ -8,7 +8,9 @@
 body {
   font-family: sans-serif;
 }
+/* Default styling ends */
 
+/* Intro section style starts */
 .intro {
   height: 100vh;
 }
@@ -18,24 +20,11 @@ body {
   width: 100%;
   object-fit: cover;
 }
+/* Intro section style ends */
 
-.intro .intro__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.788);
-}
-
+/* Intro2 section style starts */
 .intro2 {
   height: 100vh;
-}
-
-.intro2 h1 {
-  padding-top: 100px;
-  text-align: center;
-  font-size: 80px;
 }
 
 .intro2 video {
@@ -43,3 +32,4 @@ body {
   width: 100%;
   object-fit: cover;
 }
+/* Intro section style ends */
