@@ -28,12 +28,18 @@ body {
   background-color: rgba(0, 0, 0, 0.788);
 }
 
-.fitness {
+.location {
   height: 100vh;
 }
 
-.fitness h1 {
+.location h1 {
   padding-top: 100px;
   text-align: center;
   font-size: 80px;
+}
+
+.location video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
