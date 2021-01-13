@@ -16,15 +16,18 @@ const sceneIntro = new ScrollMagic.Scene({
   .addTo(controller);
 
 // Video animation
-let accelerationAmount = 0.5;
+let accelerationAmount = 0.1;
 let scrollPosition = 0;
 let delay = 0;
 
 sceneIntro.on('update', (e) => {
   scrollPosition = e.scrollPos / 1000;
+});
+
+setInterval(() => {
   delay += (scrollPosition - delay) * accelerationAmount;
   videoIntro.currentTime = delay;
-});
+}, 33.3);
 
 // INTRO 2
 
@@ -46,16 +49,17 @@ const sceneIntro2 = new ScrollMagic.Scene({
   .addTo(controller2);
 
 // Video animation
-let accelerationAmount2 = 1;
+let accelerationAmount2 = 0.1;
 let scrollPosition2 = 0;
 let delay2 = 0;
-let sp = 0;
 
 sceneIntro2.on('update', (e) => {
   if (e.scrollPos > 9000) {
-    sp = e.scrollPos % 9000;
-    scrollPosition2 = sp / 1000;
-    delay2 += (scrollPosition2 - delay2) * accelerationAmount2;
-    videoIntro2.currentTime = delay2;
+    scrollPosition2 = (e.scrollPos % 9000) / 1000;
   }
 });
+
+setInterval(() => {
+  delay2 += (scrollPosition2 - delay2) * accelerationAmount2;
+  videoIntro2.currentTime = delay2;
+}, 40);
